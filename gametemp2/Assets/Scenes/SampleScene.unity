@@ -23,10 +23,10 @@ RenderSettings:
   m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
-  m_AmbientIntensity: 1
+  m_AmbientIntensity: 0.82
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 0}
+  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -37,8 +37,8 @@ RenderSettings:
   m_ReflectionBounces: 1
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
-  m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_Sun: {fileID: 1695302482}
+  m_IndirectSpecularColor: {r: 0.44658, g: 0.49641442, b: 0.5748179, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -214,7 +214,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.3773585, g: 0.3773585, b: 0.3773585, a: 0}
+  m_BackGroundColor: {r: 0.4245283, g: 0.4245283, b: 0.4245283, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -261,6 +261,68 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 20.354, y: 0, z: 0}
+--- !u!1 &639172066 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1703209682340281143, guid: 8459140a28c7eac4d8b170b721453d02,
+    type: 3}
+  m_PrefabInstance: {fileID: 1261434084}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &639172067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 639172066}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b19ad7d2616857a46aaad58c1e77b1a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Livestatus: 0
+  Emotionstatus: 0
+  Activesatatus: 0
+  animationList:
+  - Attack
+  - Bounce
+  - Clicked
+  - Death
+  - Eat
+  - Fear
+  - Fly
+  - Hit
+  - Idle_A
+  - Idle_B
+  - Idle_C
+  - Jump
+  - Roll
+  - Run
+  - Sit
+  - Spin/Splash
+  - Swim
+  - Walk
+  shapekeyList:
+  - Eyes_Annoyed
+  - Eyes_Blink
+  - Eyes_Cry
+  - Eyes_Dead
+  - Eyes_Excited
+  - Eyes_Happy
+  - Eyes_LookDown
+  - Eyes_LookIn
+  - Eyes_LookOut
+  - Eyes_LookUp
+  - Eyes_Rabid
+  - Eyes_Sad
+  - Eyes_Shrink
+  - Eyes_Sleep
+  - Eyes_Spin
+  - Eyes_Squint
+  - Eyes_Trauma
+  - Sweat_L
+  - Sweat_R
+  - Teardrop_L
+  - Teardrop_R
 --- !u!1001 &1261434084
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -523,7 +585,7 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
+  m_Color: {r: 0.3490566, g: 0.3490566, b: 0.3490566, a: 1}
   m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
